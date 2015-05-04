@@ -33,6 +33,13 @@ body {
 .glyphicon {
   font-size: 14px;
 }
+.logo {
+  text-align: center;
+}
+.logo img {
+  inline-display: block;
+  width: 200px;
+}
 .pink-line {
   background-color: #ea0080;
   color: #fff;
