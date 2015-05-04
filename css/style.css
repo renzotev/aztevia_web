@@ -1,0 +1,89 @@
+@font-face {
+  font-family: '../fonts/JasmineUPC';
+  src: url("../fonts/JasmineUPC.eot?#iefix") format('embedded-opentype'), url("../fonts/JasmineUPC.woff") format('woff'), url("../fonts/JasmineUPC.ttf") format('truetype'), url("../fonts/JasmineUPC.svg#JasmineUPC") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: '../fonts/JasmineUPCBold';
+  src: url("../fonts/JasmineUPCBold.eot?#iefix") format('embedded-opentype'), url("../fonts/JasmineUPCBold.woff") format('woff'), url("../fonts/JasmineUPCBold.ttf") format('truetype'), url("../fonts/JasmineUPCBold.svg#JasmineUPCBold") format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: '../fonts/JasmineUPCBoldItalic';
+  src: url("../fonts/JasmineUPCBoldItalic.eot?#iefix") format('embedded-opentype'), url("../fonts/JasmineUPCBoldItalic.woff") format('woff'), url("../fonts/JasmineUPCBoldItalic.ttf") format('truetype'), url("../fonts/JasmineUPCBoldItalic.svg#JasmineUPCBoldItalic") format('svg');
+  font-weight: bold;
+  font-style: italic, oblique;
+}
+@font-face {
+  font-family: '../fonts/JasmineUPCItalic';
+  src: url("../fonts/JasmineUPCItalic.eot?#iefix") format('embedded-opentype'), url("../fonts/JasmineUPCItalic.woff") format('woff'), url("../fonts/JasmineUPCItalic.ttf") format('truetype'), url("../fonts/JasmineUPCItalic.svg#JasmineUPCItalic") format('svg');
+  font-weight: normal;
+  font-style: italic, oblique;
+}
+body {
+  font-family: "JasmineUPC";
+  font-size: 24px;
+  color: #4d4d4d;
+}
+.btn {
+  font-size: 24px;
+}
+.glyphicon {
+  font-size: 14px;
+}
+.pink-line {
+  background-color: #ea0080;
+  color: #fff;
+}
+.pink-line .input-group {
+  background-color: #680141;
+  padding: 10px;
+}
+.pink-line .input-group .form-control {
+  font-size: 24px;
+  padding-right: 10px;
+  padding-left: 34px;
+  -webkit-border-radius: 5px 0 0 5px !important;
+  -moz-border-radius: 5px 0 0 5px !important;
+  border-radius: 5px 0 0 5px !important;
+}
+.pink-line .input-group .glyphicon-search {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  z-index: 4;
+  font-size: 14px;
+  color: #666;
+}
+.pink-line .input-group .input-group-btn .btn-success {
+  line-height: 20px;
+  border: 1px solid #ccc;
+}
+.pink-line .nav-pills {
+  font-size: 20px;
+  line-height: 53px;
+}
+.pink-line .nav-pills li {
+  border-left: 1px solid #680141;
+  padding: 0 10px;
+}
+.pink-line .nav-pills li a {
+  display: block;
+  float: left;
+  padding: 0;
+  background: none;
+}
+.pink-line .nav-pills li a img {
+  width: 20px;
+  margin: 3px;
+}
+.pink-line .nav-pills li .glyphicon {
+  margin-right: 10px;
+}
+@media (min-width: 768px) {
+  .pink-line.hidden {
+    display: block !important;
+  }
+}

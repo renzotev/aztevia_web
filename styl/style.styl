@@ -1,0 +1,89 @@
+rosado = #ea0080
+
+box-shadow()
+	-moz-box-shadow arguments
+	-webkit-box-shadow arguments
+	box-shadow arguments
+
+box-sizing()
+	-webkit-box-sizing arguments
+	-moz-box-sizing arguments
+	box-sizing arguments
+	
+border-radius()
+	-webkit-border-radius arguments
+	-moz-border-radius arguments
+	border-radius arguments
+	
+opacity(n)
+	-ms-filter unquote('progid:DXImageTransform.Microsoft.Alpha(Opacity=' + round(n * 100) + ')')
+	filter unquote('alpha(opacity=' + round(n * 100) + ')')
+	-moz-opacity n
+	-khtml-opacity n
+	opacity n
+
+@import ("fonts.styl")
+
+body
+	font-family "JasmineUPC"
+	font-size 24px
+	color #4d4d4d
+
+.btn
+	font-size 24px
+
+.glyphicon
+	font-size 14px
+	
+.pink-line
+	background-color rosado
+	color white
+	
+	.input-group
+		background-color #680141
+		padding 10px
+		
+		.form-control
+			font-size 24px
+			padding-right 10px
+			padding-left 34px
+			border-radius 5px 0 0 5px !important
+			
+		.glyphicon-search
+			position absolute
+			left 20px
+			top 20px
+			z-index 4
+			font-size 14px
+			color #666666
+		
+		.input-group-btn
+			.btn-success
+				line-height 20px
+				border 1px solid #ccc
+	
+	.nav-pills
+		font-size 20px
+		line-height 53px
+		
+		li
+			border-left 1px solid #680141
+			padding 0 10px
+			
+			a
+				display block
+				float left
+				padding 0
+				background none
+
+				img
+					width 20px
+					margin 3px
+			
+			.glyphicon
+				margin-right 10px
+			
+	
+
+@import ("responsive.styl")
+	
