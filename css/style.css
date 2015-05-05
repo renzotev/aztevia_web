@@ -243,11 +243,68 @@ header .slogan img {
 .main-slider .carousel .carousel-indicators li.active {
   background-color: #ea0080;
 }
+.nutrition-section {
+  background: url("../img/bg-2.jpg") repeat repeat;
+  padding: 15px 0;
+}
+.nutrition-section h2 {
+  background-color: #ed1e79;
+  color: #fff;
+  display: inline-block;
+  padding: 5px 20px 5px 80px;
+  margin: 0 0 15px 0;
+}
+.nutrition-section .col-sm-4 .block-pink {
+  background-color: #ed1e79;
+  position: relative;
+  min-height: 1px;
+  float: left;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.nutrition-section .col-sm-4 .block-pink h3 {
+  color: #8cc63f;
+  line-height: 18px;
+}
+.nutrition-section .col-sm-4 .block-pink p {
+  font-size: 20px;
+  line-height: 18px;
+}
+.nutrition-section .col-sm-4 .block-pink .date {
+  font-size: 20px;
+  line-height: 18px;
+}
+.nutrition-section .col-sm-4 .block-pink .see-more {
+  display: block;
+  background-color: #8cc63f;
+  text-decoration: none;
+  color: #fff;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 0 100px 0 20px;
+}
+.nutrition-section .col-sm-4 .block-pink .see-more:before {
+  content: "";
+  display: block;
+  border-top: 17px solid transparent;
+  border-right: 17px solid #8cc63f;
+  border-bottom: 17px solid transparent;
+  border-left: 17px solid transparent;
+  position: absolute;
+  left: -34px;
+}
+.nutrition-section .col-sm-4 .col-sm-5,
+.nutrition-section .col-sm-4 .col-sm-7 {
+  padding: 0;
+}
+.nutrition-section .col-sm-4 .col-sm-7.last {
+  padding: 0 10px 40px 10px;
+}
 .products-section {
   background: url("../img/bg-1.jpg") repeat repeat;
-}
-.products-section .container {
-  background: url("../img/plantas.png") 50% 0 fixed;
+/*.container
+		background url("../img/plantas.png") 50% 0 fixed */
 }
 .products-section .summary {
   text-align: center;
@@ -258,6 +315,41 @@ header .slogan img {
 }
 .products-section .summary p {
   line-height: normal;
+  margin-bottom: 30px;
+}
+.products-section .col-sm-8 .col-sm-4 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.products-section .col-sm-8 .col-sm-4 span {
+  color: #009245;
+  font-weight: bold;
+  display: block;
+}
+.products-section .col-sm-8 .col-sm-4 p {
+  text-align: center;
+  line-height: normal;
+}
+.products-section .col-sm-8 .col-sm-4 .img-responsive {
+  display: inline-block;
+}
+.sports {
+  padding: 30px 0;
+}
+.sports h2 {
+  background-color: #009245;
+  color: #fff;
+  display: inline-block;
+  padding: 5px 20px 5px 80px;
+  margin: 0;
+}
+.sports .container {
+  background: url("../img/bg-3.jpg") 230px 568px no-repeat fixed;
+  background-size: 100%;
+  color: #fff;
+}
+.sports .container .col-sm-10 {
+  background: rgba(66,33,11,0.5);
 }
 @media (min-width: 768px) {
   header .logo {

@@ -252,11 +252,71 @@ header
 				&.active
 					background-color rosado
 
+.nutrition-section
+	background url("../img/bg-2.jpg") repeat repeat
+	padding 15px 0
+	
+	h2
+		background-color #ed1e79
+		color white
+		display inline-block
+		padding 5px 20px 5px 80px
+		margin 0 0 15px 0
+	
+	.col-sm-4
+		.block-pink
+			background-color #ed1e79
+			position relative
+			min-height 1px
+			float left
+			color white
+			margin-bottom 20px
+			
+			h3
+				color #8cc63f
+				line-height 18px
+			
+			p
+				font-size 20px
+				line-height 18px
+			
+			.date
+				font-size 20px
+				line-height 18px
+			
+			.see-more
+				display block
+				background-color #8cc63f
+				text-decoration none
+				color white
+				position absolute
+				right 0
+				bottom 0
+				padding 0 100px 0 20px
+				
+				&:before
+					content ""
+					display block
+					border-top 17px solid transparent
+					border-right 17px solid #8cc63f
+					border-bottom 17px solid transparent
+					border-left 17px solid transparent
+					position absolute
+					left -34px
+		
+		.col-sm-5,
+		.col-sm-7
+			padding 0
+		
+		.col-sm-7
+			&.last
+				padding 0 10px 40px 10px
+
 .products-section
 	background url("../img/bg-1.jpg") repeat repeat
 	
-	.container
-		background url("../img/plantas.png") 50% 0 fixed 
+	/*.container
+		background url("../img/plantas.png") 50% 0 fixed */
 	
 	.summary
 		text-align center
@@ -267,6 +327,42 @@ header
 		
 		p
 			line-height normal
+			margin-bottom 30px
+	
+	.col-sm-8
+		.col-sm-4
+			text-align center
+			margin-bottom 40px
+			
+			span
+				color #009245
+				font-weight bold
+				display block
+			
+			p
+				text-align center
+				line-height normal
+			
+			.img-responsive
+				display inline-block
+
+.sports
+	padding 30px 0
+	
+	h2
+		background-color #009245
+		color white
+		display inline-block
+		padding 5px 20px 5px 80px
+		margin 0
+		
+	.container
+		background url("../img/bg-3.jpg") 230px 568px no-repeat fixed
+		background-size 100%
+		color white
+		
+		.col-sm-10
+			background rgba(66,33,11,.5)
 
 
 @import ("responsive.styl")
