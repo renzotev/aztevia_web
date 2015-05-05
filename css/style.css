@@ -154,6 +154,35 @@ header .slogan img {
   width: 90%;
   max-width: 490px;
 }
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 30px 0;
+}
+footer h2 {
+  color: #8cc63f;
+  margin-top: 0;
+}
+footer p {
+  line-height: normal;
+}
+footer p .green {
+  color: #8cc63f;
+}
+footer .form-horizontal .control-label {
+  color: #8cc63f;
+  font-weight: normal;
+}
+footer .form-horizontal .form-group {
+  margin: 0;
+}
+footer .form-horizontal .form-group textarea {
+  resize: none;
+  min-height: 200px;
+}
+footer .form-horizontal .form-group .btn-success {
+  margin-top: 20px;
+}
 .about-section {
   background: url("../img/bg-1.jpg") repeat repeat;
   padding: 20px 0;
@@ -208,6 +237,20 @@ header .slogan img {
   border-left: 17px solid transparent;
   position: absolute;
   left: -34px;
+}
+.find-us {
+  padding: 30px 0;
+}
+.find-us h2 {
+  background-color: #009245;
+  color: #fff;
+  display: inline-block;
+  padding: 5px 20px 5px 80px;
+  margin: 0 0 20px 0;
+}
+.find-us .img-responsive {
+  text-align: center;
+  display: inline-block;
 }
 .line-darkGray {
   background-color: #333;
@@ -333,8 +376,42 @@ header .slogan img {
 .products-section .col-sm-8 .col-sm-4 .img-responsive {
   display: inline-block;
 }
+.recipes-section {
+  padding: 30px 0;
+  background: url("../img/bg-4.jpg") repeat repeat;
+}
+.recipes-section h2 {
+  background-color: #fff;
+  color: #ed1e79;
+  display: inline-block;
+  padding: 5px 20px 5px 80px;
+  margin: 0 0 20px 0;
+}
+.recipes-section .caption {
+  color: #fff;
+  background-color: #ed1e79;
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+  line-height: normal;
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+}
+.recipes-section .see-more {
+  background-color: #d9e021;
+  display: inline-block;
+  color: #333;
+  text-align: center;
+  padding: 5px 15px;
+  line-height: normal;
+  position: absolute;
+  bottom: 0;
+  right: 15px;
+}
 .sports {
   padding: 30px 0;
+  background: url("../img/bg-3.jpg") 50% 0 fixed;
 }
 .sports h2 {
   background-color: #009245;
@@ -343,9 +420,49 @@ header .slogan img {
   padding: 5px 20px 5px 80px;
   margin: 0;
 }
+.sports h3 {
+  color: #d9e021;
+  font-size: 30px;
+}
+.sports p {
+  line-height: normal;
+  position: relative;
+}
+.sports .col-sm-3 {
+  text-align: center;
+}
+.sports .col-sm-3 .img-responsive {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.sports .col-sm-9 {
+  padding-bottom: 50px;
+}
+.sports .row:first-child {
+  border-bottom: 1px solid #8cc63f;
+}
+.sports .see-more {
+  display: block;
+  background-color: #8cc63f;
+  text-decoration: none;
+  color: #fff;
+  position: absolute;
+  right: 32px;
+  bottom: 17px;
+  padding: 0 100px 0 20px;
+}
+.sports .see-more:before {
+  content: "";
+  display: block;
+  border-top: 17px solid transparent;
+  border-right: 17px solid transparent;
+  border-bottom: 17px solid transparent;
+  border-left: 17px solid #8cc63f;
+  position: absolute;
+  right: -34px;
+}
 .sports .container {
-  background: url("../img/bg-3.jpg") 230px 568px no-repeat fixed;
-  background-size: 100%;
   color: #fff;
 }
 .sports .container .col-sm-10 {
