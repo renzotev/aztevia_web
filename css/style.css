@@ -33,22 +33,75 @@ body {
 .glyphicon {
   font-size: 14px;
 }
-.logo {
-  text-align: center;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+strong {
+  font-weight: bold;
 }
-.logo img {
+header .logo {
+  text-align: center;
+  width: 100%;
+}
+header .logo img {
   inline-display: block;
   width: 200px;
 }
-.pink-line {
+header .navbar {
+  background-color: #ea0080;
+  min-height: 0;
+  margin-bottom: 0;
+  -moz-box-shadow: 0 10px 25px -6px #000;
+  -webkit-box-shadow: 0 10px 25px -6px #000;
+  box-shadow: 0 10px 25px -6px #000;
+  z-index: 2;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  border-radius: 0 !important;
+  border: 0;
+}
+header .navbar .navbar-collapse .navbar-nav li.active a {
+  background-color: #ff8ecb;
+}
+header .navbar .navbar-collapse .navbar-nav li a {
+  color: #fff;
+  padding: 10px 20px;
+}
+header .navbar .navbar-collapse .navbar-nav li a:hover,
+header .navbar .navbar-collapse .navbar-nav li a:focus {
+  background-color: #ff8ecb;
+}
+header .navbar .navbar-collapse .navbar-nav li.apple-green a {
+  background-color: #8cc63f;
+}
+header .navbar .navbar-collapse .navbar-nav li.apple-green a:hover {
+  background-color: #a9de64;
+}
+header .navbar .navbar-collapse .navbar-nav li.green a {
+  background-color: #006837;
+}
+header .navbar .navbar-collapse .navbar-nav li.green a:hover {
+  background-color: #1d8353;
+}
+header .navbar .navbar-header .navbar-toggle {
+  border: 1px solid #fff;
+}
+header .navbar .navbar-header .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+header .pink-line {
   background-color: #ea0080;
   color: #fff;
 }
-.pink-line .input-group {
+header .pink-line .input-group {
   background-color: #680141;
   padding: 10px;
 }
-.pink-line .input-group .form-control {
+header .pink-line .input-group .form-control {
   font-size: 24px;
   padding-right: 10px;
   padding-left: 34px;
@@ -56,7 +109,7 @@ body {
   -moz-border-radius: 5px 0 0 5px !important;
   border-radius: 5px 0 0 5px !important;
 }
-.pink-line .input-group .glyphicon-search {
+header .pink-line .input-group .glyphicon-search {
   position: absolute;
   left: 20px;
   top: 20px;
@@ -64,33 +117,167 @@ body {
   font-size: 14px;
   color: #666;
 }
-.pink-line .input-group .input-group-btn .btn-success {
+header .pink-line .input-group .input-group-btn .btn-success {
   line-height: 20px;
   border: 1px solid #ccc;
 }
-.pink-line .nav-pills {
+header .pink-line .nav-pills {
   font-size: 20px;
   line-height: 53px;
 }
-.pink-line .nav-pills li {
+header .pink-line .nav-pills li {
   border-left: 1px solid #680141;
   padding: 0 10px;
 }
-.pink-line .nav-pills li a {
+header .pink-line .nav-pills li a {
   display: block;
   float: left;
   padding: 0;
   background: none;
 }
-.pink-line .nav-pills li a img {
+header .pink-line .nav-pills li a img {
   width: 20px;
   margin: 3px;
 }
-.pink-line .nav-pills li .glyphicon {
+header .pink-line .nav-pills li .glyphicon {
   margin-right: 10px;
 }
+header .slogan {
+  background: url("../img/background-slogan.jpg") center center;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 10px;
+  width: 100%;
+}
+header .slogan img {
+  display: inline-block;
+  width: 90%;
+  max-width: 490px;
+}
+.about-section {
+  background: url("../img/bg-1.jpg") repeat repeat;
+  padding: 20px 0;
+}
+.about-section .container {
+  color: #fff;
+}
+.about-section .container .col-sm-10 {
+  padding: 0;
+}
+.about-section .container .col-sm-10 .col-sm-6 {
+  padding: 0;
+}
+.about-section .container .col-sm-10 .col-sm-6.pink {
+  background-color: #ea0080;
+  padding: 5px 15px 25px 15px;
+}
+.about-section .container .col-sm-10 .col-sm-6:first-child {
+  text-align: center;
+}
+.about-section .container .col-sm-10 .col-sm-6 h2 {
+  font-size: 30px;
+  margin-top: 10px;
+}
+.about-section .container .col-sm-10 .col-sm-6 p {
+  line-height: normal;
+  font-size: 20px;
+}
+.about-section .container .col-sm-10 .col-sm-6 .about-content {
+  position: relative;
+  padding-bottom: 10px;
+}
+.about-section .container .col-sm-10 .col-sm-6 .img-responsive {
+  display: inline-block;
+}
+.about-section .container .col-sm-10 .see-more {
+  display: block;
+  background-color: #8cc63f;
+  text-decoration: none;
+  color: #fff;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 0 15px;
+}
+.about-section .container .col-sm-10 .see-more:before {
+  content: "";
+  display: block;
+  border-top: 17px solid transparent;
+  border-right: 17px solid #8cc63f;
+  border-bottom: 17px solid transparent;
+  border-left: 17px solid transparent;
+  position: absolute;
+  left: -34px;
+}
+.line-darkGray {
+  background-color: #333;
+  padding: 30px 0 10px 0;
+}
+.line-darkGray .col-xs-4 {
+  text-align: center;
+}
+.line-darkGray .col-xs-4 .percent {
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 40px;
+}
+.line-darkGray .col-xs-4 .percent.apple-green {
+  color: #8cc63f;
+}
+.line-darkGray .col-xs-4 .percent.green {
+  color: #006837;
+}
+.line-darkGray .col-xs-4 .percent.pink {
+  color: #ea0080;
+}
+.line-darkGray .col-xs-4 span {
+  color: #fff;
+}
+.main-slider .carousel .carousel-control {
+  color: #009344;
+}
+.main-slider .carousel .carousel-indicators li {
+  background-color: #fff;
+  border-color: #ea0080;
+}
+.main-slider .carousel .carousel-indicators li.active {
+  background-color: #ea0080;
+}
+.products-section {
+  background: url("../img/bg-1.jpg") repeat repeat;
+}
+.products-section .container {
+  background: url("../img/plantas.png") 50% 0 fixed;
+}
+.products-section .summary {
+  text-align: center;
+}
+.products-section .summary h2 {
+  color: #006837;
+  font-size: 50px;
+}
+.products-section .summary p {
+  line-height: normal;
+}
 @media (min-width: 768px) {
-  .pink-line.hidden {
+  header .logo {
+    float: left;
+  }
+  header .pink-line.hidden {
     display: block !important;
+  }
+  header .slogan {
+    padding: 16px 0 15px 0;
+    margin-top: 0;
+    float: left;
+  }
+  .about-section .container .col-sm-10 {
+    background-color: #ea0080;
+  }
+  .line-darkGray .col-xs-4 .percent {
+    font-size: 80px;
+  }
+  .main-slider .carousel .carousel-indicators {
+    bottom: 120px;
   }
 }

@@ -35,62 +35,239 @@ body
 .glyphicon
 	font-size 14px
 
-.logo
-	text-align center
-	
-	img
-		inline-display block
-		width 200px
-	
-.pink-line
-	background-color rosado
-	color white
-	
-	.input-group
-		background-color #680141
-		padding 10px
-		
-		.form-control
-			font-size 24px
-			padding-right 10px
-			padding-left 34px
-			border-radius 5px 0 0 5px !important
-			
-		.glyphicon-search
-			position absolute
-			left 20px
-			top 20px
-			z-index 4
-			font-size 14px
-			color #666666
-		
-		.input-group-btn
-			.btn-success
-				line-height 20px
-				border 1px solid #ccc
-	
-	.nav-pills
-		font-size 20px
-		line-height 53px
-		
-		li
-			border-left 1px solid #680141
-			padding 0 10px
-			
-			a
-				display block
-				float left
-				padding 0
-				background none
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+strong
+	font-weight bold
 
-				img
-					width 20px
-					margin 3px
+header
+	.logo
+		text-align center
+		width 100%
+		
+		img
+			inline-display block
+			width 200px
 			
-			.glyphicon
-				margin-right 10px
+	.navbar
+		background-color rosado
+		min-height 0
+		margin-bottom 0
+		box-shadow 0 10px 25px -6px #000
+		z-index 2
+		border-radius 0 !important
+		border 0
+		
+		.navbar-collapse			
+			.navbar-nav
+				li
+					&.active
+						a
+							background-color #FF8ECB
+						
+					a
+						color white
+						padding 10px 20px
+						
+						&:hover,
+						&:focus
+							background-color #FF8ECB
+					
+					&.apple-green
+						a
+							background-color #8cc63f
+							
+							&:hover
+								background-color #A9DE64
+						
+					&.green
+						a
+							background-color #006837
+							
+							&:hover
+								background-color #1D8353
+
+		
+		.navbar-header
+			.navbar-toggle
+				border 1px solid white
+				
+				.icon-bar
+					background-color white
 			
+	.pink-line
+		background-color rosado
+		color white
+		
+		.input-group
+			background-color #680141
+			padding 10px
+			
+			.form-control
+				font-size 24px
+				padding-right 10px
+				padding-left 34px
+				border-radius 5px 0 0 5px !important
+				
+			.glyphicon-search
+				position absolute
+				left 20px
+				top 20px
+				z-index 4
+				font-size 14px
+				color #666666
+			
+			.input-group-btn
+				.btn-success
+					line-height 20px
+					border 1px solid #ccc
+		
+		.nav-pills
+			font-size 20px
+			line-height 53px
+			
+			li
+				border-left 1px solid #680141
+				padding 0 10px
+				
+				a
+					display block
+					float left
+					padding 0
+					background none
+
+					img
+						width 20px
+						margin 3px
+				
+				.glyphicon
+					margin-right 10px
+				
+	.slogan
+		background url("../img/background-slogan.jpg") center center
+		text-align center
+		padding 10px 0
+		margin-top 10px
+		width 100%
+		
+		img
+			display inline-block
+			width 90%
+			max-width 490px
+
+.about-section
+	background url("../img/bg-1.jpg") repeat repeat
+	padding 20px 0
 	
+	.container
+		color white
+		
+		.col-sm-10
+			padding 0
+			
+			.col-sm-6
+				padding 0
+				
+				&.pink
+					background-color rosado
+					padding 5px 15px 25px 15px
+				
+				&:first-child
+					text-align center
+				
+				h2
+					font-size 30px
+					margin-top 10px
+					
+				p
+					line-height normal
+					font-size 20px
+				
+				.about-content
+					position relative
+					padding-bottom 10px
+
+				.img-responsive
+					display inline-block
+			
+			.see-more
+				display block
+				background-color #8cc63f
+				text-decoration none
+				color white
+				position absolute
+				right 0
+				bottom 0
+				padding 0 15px
+				
+				&:before
+					content ""
+					display block
+					border-top 17px solid transparent
+					border-right 17px solid #8cc63f
+					border-bottom 17px solid transparent
+					border-left 17px solid transparent
+					position absolute
+					left -34px
+
+.line-darkGray
+	background-color #333333
+	padding 30px 0 10px 0
+	
+	.col-xs-4
+		text-align center
+		
+		.percent
+			font-size 60px
+			font-weight bold
+			line-height 40px
+			
+			&.apple-green
+				color #8cc63f
+			
+			&.green
+				color #006837
+			
+			&.pink
+				color rosado	
+			
+		span
+			color white
+
+.main-slider
+	.carousel
+		.carousel-control
+			color #009344
+
+		.carousel-indicators
+			li
+				background-color white
+				border-color rosado
+				
+				&.active
+					background-color rosado
+
+.products-section
+	background url("../img/bg-1.jpg") repeat repeat
+	
+	.container
+		background url("../img/plantas.png") 50% 0 fixed 
+	
+	.summary
+		text-align center
+		
+		h2
+			color #006837
+			font-size 50px
+		
+		p
+			line-height normal
+
 
 @import ("responsive.styl")
 	
