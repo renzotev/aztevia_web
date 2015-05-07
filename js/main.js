@@ -16,7 +16,7 @@ $(function(){
 
     $window = $(window);
  
-   	$('.sports[data-type="background"]').each(function(){
+   	$('.parallax[data-type="background"]').each(function(){
      // declare the variable to affect the defined data-type
      var $scroll = $(this);
                      
