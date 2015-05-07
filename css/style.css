@@ -104,8 +104,10 @@ header .navbar .navbar-collapse .navbar-nav li a {
   padding: 10px 20px;
   vertical-align: middle;
 }
-header .navbar .navbar-collapse .navbar-nav li a:hover,
 header .navbar .navbar-collapse .navbar-nav li a:focus {
+  background-color: transparent;
+}
+header .navbar .navbar-collapse .navbar-nav li a:hover {
   background-color: #006837;
 }
 header .navbar .navbar-header .navbar-toggle {
