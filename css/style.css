@@ -59,7 +59,7 @@ header {
   position: fixed;
   z-index: 99;
   width: 100%;
-  background: url("../img/bg-1.jpg") repeat repeat;
+  background-color: #fff;
 }
 header .logo-wrapper .col-sm-4,
 header .logo-wrapper .col-sm-8 {
@@ -222,16 +222,50 @@ footer .rs-f {
 footer .rs-f:last-child {
   margin-bottom: 50px;
 }
-.block-green {
-  background-color: #01cc01;
+.block-wood {
+  background: url("../img/wood-bg.png") repeat-x 0 0;
+  height: 155px;
+  margin-top: -18px;
+  position: relative;
+  z-index: 2;
 }
-.block-green #message {
-  color: #fff;
+.block-wood .message {
+  color: #0a6633;
   font-style: italic;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 28px;
   line-height: 26px;
-  padding: 5px;
+  padding: 25px 5px 5px 5px;
+  position: relative;
+}
+.block-wood .message .white {
+  color: #fff;
+}
+.block-wood .see-more {
+  background-color: #0a6633;
+  color: #fff;
+  display: inline-block;
+  font-size: 24px;
+  font-style: normal;
+  margin-right: 26px;
+  padding: 0 20px 0 20px;
+  position: absolute;
+  right: 0;
+  text-decoration: none;
+  top: 100%;
+  filter: progid:DXImageTransform.Microsoft.Dropshadow(OffX=5px, OffY=5px, Color='#333');
+  -webkit-filter: drop-shadow(5px 5px 3px rgba(0,0,0,0.75));
+  filter: drop-shadow(5px 5px 3px rgba(0,0,0,0.75));
+}
+.block-wood .see-more:before {
+  border-bottom: 13px solid transparent;
+  border-left: 13px solid #0a6633;
+  border-right: 13px solid transparent;
+  border-top: 13px solid transparent;
+  content: "";
+  display: block;
+  position: absolute;
+  right: -26px;
 }
 .line-darkGray {
   background-color: #fff;
@@ -273,12 +307,115 @@ footer .rs-f:last-child {
 .main-slider .carousel .carousel-indicators li.active {
   background-color: #ed1e79;
 }
+.products {
+  background: url("../img/bg-productos.jpg") repeat-x 0 0;
+  min-height: 714px;
+  padding-top: 120px;
+}
+.products .apple-green-message {
+  padding: 20px 40px;
+  background-color: #8dba1f;
+  position: relative;
+}
+.products .apple-green-message p {
+  padding: 0;
+  margin: 0;
+  text-shadow: 7px 7px 9px rgba(0,0,0,0.75);
+  font-weight: bold;
+  color: #fff;
+  font-size: 40px;
+  font-style: italic;
+  line-height: 30px;
+  margin-bottom: 70px;
+}
+.products .apple-green-message .see-more {
+  background-color: #0a6633;
+  color: #fff;
+  display: inline-block;
+  filter: progid:DXImageTransform.Microsoft.Dropshadow(OffX=5px, OffY=5px, Color='#333');
+  -webkit-filter: drop-shadow(5px 5px 3px rgba(0,0,0,0.75));
+  filter: drop-shadow(5px 5px 3px rgba(0,0,0,0.75));
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 42px;
+  margin-right: 42px;
+  padding: 0 100px;
+  position: absolute;
+  right: 0;
+  text-decoration: none;
+  top: 100%;
+  margin-top: -65px;
+}
+.products .apple-green-message .see-more:before {
+  border-bottom: 21px solid transparent;
+  border-left: 21px solid #0a6633;
+  border-right: 21px solid transparent;
+  border-top: 21px solid transparent;
+  content: "";
+  display: block;
+  position: absolute;
+  right: -42px;
+}
+.products .box {
+  border: 10px solid transparent;
+  position: relative;
+  filter: progid:DXImageTransform.Microsoft.Dropshadow(OffX=5px, OffY=5px, Color='#333');
+  -webkit-filter: drop-shadow(5px 5px 3px rgba(0,0,0,0.75));
+  filter: drop-shadow(5px 5px 3px rgba(0,0,0,0.75));
+  display: block;
+  margin-bottom: 65px;
+}
+.products .box img {
+  width: 100%;
+}
+.products .box figcaption {
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  color: #fff;
+  display: table;
+  font-weight: bold;
+  height: 52px;
+  left: 50%;
+  margin-left: -105.5px;
+  margin-top: -7px;
+  position: absolute;
+  text-align: center;
+  top: 100%;
+  width: 213px;
+}
+.products .box figcaption span {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 20px;
+  line-height: 16px;
+}
+.products .box.apple-green {
+  border-color: #8dba1f;
+}
+.products .box.apple-green figcaption {
+  background-image: url("../img/caption-1.png");
+}
+.products .box.green {
+  border-color: #0a6633;
+}
+.products .box.green figcaption {
+  background-image: url("../img/caption-2.png");
+}
+.products .box.pink {
+  border-color: #ed1e79;
+}
+.products .box.pink figcaption {
+  background-image: url("../img/caption-3.png");
+}
 @media (min-width: 480px) {
-  .block-green #message {
-    color: #fff;
-    font-size: 28px;
+  .block-wood .message {
+    font-size: 29px;
     line-height: 30px;
-    padding: 15px;
+    padding: 25px 15px 15px 15px;
+  }
+  .block-wood .see-more {
+    margin-top: -33px;
+    line-height: 26px;
   }
 }
 @media (min-width: 768px) {
@@ -304,6 +441,14 @@ footer .rs-f:last-child {
     margin-top: 0;
     float: left;
   }
+  .block-wood .message {
+    font-size: 43px;
+    line-height: 40px;
+  }
+  .block-wood .see-more {
+    margin-top: -40px;
+    font-size: 28px;
+  }
   .line-darkGray .col-xs-4 .percent {
     font-size: 120px;
   }
@@ -318,11 +463,27 @@ footer .rs-f:last-child {
   header .navbar .navbar-collapse .navbar-nav li a {
     width: 117px;
   }
-  .block-green #message {
-    color: #fff;
+  .block-wood .message {
     font-size: 48px;
-    line-height: 40px;
-    padding: 20px;
+    padding: 20px 105px 20px 20px;
+  }
+  .block-wood .see-more {
+    margin-top: -45px;
+    font-size: 28px;
+    right: 90px;
+  }
+  .products .apple-green-message {
+    padding: 40px 60px;
+    margin-top: 30px;
+  }
+  .products .apple-green-message p {
+    padding: 0 140px 0 0;
+    font-size: 65px;
+    line-height: 50px;
+    margin-bottom: 0;
+  }
+  .products .apple-green-message .see-more {
+    font-size: 45px;
   }
 }
 @media (min-width: 1200px) {
@@ -330,10 +491,13 @@ footer .rs-f:last-child {
     width: 142px;
     height: 40px;
   }
-  .block-green #message {
-    color: #fff;
-    font-size: 58px;
-    line-height: 48px;
-    padding: 30px;
+  .block-wood .message {
+    padding: 30px 195px 30px 30px;
+    font-size: 50px;
+  }
+  .block-wood .see-more {
+    font-size: 28px;
+    margin-top: -57px;
+    right: 265px;
   }
 }

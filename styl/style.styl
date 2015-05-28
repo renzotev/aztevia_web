@@ -24,6 +24,12 @@ opacity(n)
 	-khtml-opacity n
 	opacity n
 
+drop-shadow(n)
+	filter: unquote("progid:DXImageTransform.Microsoft.Dropshadow(OffX="+n+", OffY="+n+", Color='#333')")
+	-webkit-filter: unquote("drop-shadow("+n+" "+n+" 3px rgba(0,0,0,0.75))")
+	filter: unquote("drop-shadow("+n+" "+n+" 3px rgba(0,0,0,0.75))")
+
+
 @import ("fonts.styl")
 
 body
@@ -51,7 +57,7 @@ header
 	position fixed
 	z-index 99
 	width 100%
-	background url("../img/bg-1.jpg") repeat repeat
+	background-color white
 	
 	.logo-wrapper
 		.col-sm-4,
@@ -214,16 +220,48 @@ footer
 			margin-bottom 50px
 
 
-.block-green
-	background-color #01cc01
+.block-wood
+	background url("../img/wood-bg.png") repeat-x 0 0
+	height 155px
+	margin-top -18px
+	position relative
+	z-index 2
 	
-	#message
-		color #fff
+	.message
+		color verde_palta
 		font-style italic
 		font-weight bold
-		font-size 22px
+		font-size 28px
 		line-height 26px
-		padding 5px
+		padding 25px 5px 5px 5px
+		position relative
+		
+		.white
+			color white
+	
+	.see-more
+		background-color verde_palta
+		color #fff
+		display inline-block
+		font-size 24px
+		font-style normal
+		margin-right 26px
+		padding 0 20px 0 20px
+		position absolute
+		right 0
+		text-decoration none
+		top 100%
+		drop-shadow(5px)
+		
+		&:before
+			border-bottom 13px solid transparent
+			border-left 13px solid verde_palta
+			border-right 13px solid transparent
+			border-top 13px solid transparent
+			content ""
+			display block
+			position absolute
+			right -26px
 
 
 .line-darkGray
@@ -270,6 +308,102 @@ footer
 				&.active
 					background-color rosado
 
+
+.products
+	background url("../img/bg-productos.jpg") repeat-x 0 0
+	min-height 714px
+	padding-top 120px
+	
+	.apple-green-message
+		padding 20px 40px
+		background-color verde_limon
+		position relative
+		
+		p
+			padding 0
+			margin 0
+			text-shadow 7px 7px 9px rgba(0,0,0,.75)
+			font-weight bold
+			color white
+			font-size 40px
+			font-style italic
+			line-height 30px
+			margin-bottom 70px
+		
+		.see-more
+			background-color verde_palta
+			color white
+			display inline-block
+			drop-shadow(5px)
+			font-size 30px
+			font-weight bold
+			line-height 42px
+			margin-right 42px
+			padding 0 100px
+			position absolute
+			right 0
+			text-decoration none
+			top 100%
+			margin-top -65px
+			
+			&:before
+				border-bottom 21px solid transparent
+				border-left 21px solid verde_palta
+				border-right 21px solid transparent
+				border-top 21px solid transparent
+				content ""
+				display block
+				position absolute
+				right -42px
+	
+	.box
+		border 10px solid transparent
+		position relative
+		drop-shadow(5px)
+		display block
+		margin-bottom 65px
+		
+		img
+			width 100%
+		
+		figcaption
+			background-position 0 0
+			background-repeat no-repeat
+			color white
+			display table
+			font-weight bold
+			height 52px
+			left 50%
+			margin-left -105.5px
+			margin-top -7px
+			position absolute
+			text-align center
+			top 100%
+			width 213px
+			
+			span
+				display table-cell
+				vertical-align middle
+				padding 0 20px
+				line-height 16px
+		
+		&.apple-green
+			border-color verde_limon
+			
+			figcaption
+				background-image url("../img/caption-1.png")
+		
+		&.green
+			border-color verde_palta
+			
+			figcaption
+				background-image url("../img/caption-2.png")
+		
+		&.pink
+			border-color rosado
+			
+			figcaption
+				background-image url("../img/caption-3.png")
 
 @import ("responsive.styl")
 	
