@@ -30,7 +30,6 @@ body
 	font-family "JasmineUPC"
 	font-size 24px
 	color #4d4d4d
-	background url("../img/bg-1.jpg") repeat repeat
 
 .btn
 	font-size 24px
@@ -84,10 +83,6 @@ header
 				li
 					display table
 					width 100%
-					
-					&.active
-						a
-							background-color verde_limon !important
 						
 					a
 						color white
@@ -98,10 +93,14 @@ header
 						&:focus
 							background-color transparent
 						
-						&:hover
-							background-color verde_palta
-							
+						&.apple-green
+							background-color verde_limon
 						
+						&.green
+							background-color verde_palta
+						
+						&.pink
+							background-color rosado
 		
 		.navbar-header
 			.navbar-toggle
@@ -214,60 +213,6 @@ footer
 		&:last-child
 			margin-bottom 50px
 
-.about-section
-	background url("../img/bg-1.jpg") repeat repeat
-	padding 20px 0
-	
-	.container
-		color white
-		
-		.col-sm-10
-			padding 0
-			
-			.col-sm-6
-				padding 0
-				
-				&.pink
-					background-color rosado
-					padding 5px 15px 25px 15px
-				
-				&:first-child
-					text-align center
-				
-				h2
-					font-size 30px
-					margin-top 10px
-					
-				p
-					line-height normal
-					font-size 20px
-				
-				.about-content
-					position relative
-					padding-bottom 10px
-
-				.img-responsive
-					display inline-block
-			
-			.see-more
-				display block
-				background-color verde_limon
-				text-decoration none
-				color white
-				position absolute
-				right 0
-				bottom 0
-				padding 0 15px
-				
-				&:before
-					content ""
-					display block
-					border-top 17px solid transparent
-					border-right 17px solid verde_limon
-					border-bottom 17px solid transparent
-					border-left 17px solid transparent
-					position absolute
-					left -34px
 
 .block-green
 	background-color #01cc01
@@ -280,28 +225,9 @@ footer
 		line-height 26px
 		padding 5px
 
-.find-us
-	padding 30px 0
-	background-color white
-	
-	h2
-		background-color #009245
-		color white
-		display inline-block
-		padding 5px 20px 5px 80px
-		margin 0 0 20px 0
-	
-	.img-responsive
-		text-align center
-		display inline-block
-
-.google-maps
-	width 100%
-	height 155px
-	float left
 
 .line-darkGray
-	background-color #333333
+	background-color white
 	padding 58px 0 38px 0
 	
 	.col-xs-4
@@ -309,20 +235,20 @@ footer
 		
 		.percent
 			font-size 60px
-			font-weight bold
 			line-height 40px
 			
-			&.apple-green
-				color verde_limon
-			
-			&.green
-				color verde_palta
-			
-			&.pink
-				color rosado	
-			
-		span
-			color white
+		.apple-green
+			color verde_limon
+			font-weight bold
+		
+		.green
+			color verde_palta
+			font-weight bold
+		
+		.pink
+			color rosado
+			font-weight bold	
+
 
 .main-slider
 	.carousel
@@ -344,251 +270,6 @@ footer
 				&.active
 					background-color rosado
 
-.nutrition-section
-	background url("../img/bg-2.jpg") repeat repeat
-	padding 15px 0
-	
-	h2
-		background-color #ed1e79
-		color white
-		display inline-block
-		padding 5px 20px 5px 80px
-		margin 0 0 15px 0
-	
-	.col-sm-4
-		.block-pink
-			background-color #ed1e79
-			position relative
-			min-height 1px
-			float left
-			color white
-			margin-bottom 20px
-			
-			h3
-				color verde_limon
-				line-height 18px
-			
-			p
-				font-size 20px
-				line-height 18px
-			
-			.date
-				font-size 20px
-				line-height 18px
-			
-			.see-all
-				display inline-block
-				background-color #ed1e79
-				text-decoration none
-				color #fff
-				position relative
-				padding 0 100px 0 20px
-				margin-top 30px
-				margin-right 34px
-				
-				&:before
-					content ""
-					display block
-					border-top 17px solid transparent
-					border-right 17px solid transparent
-					border-bottom 17px solid transparent
-					border-left 17px solid #ed1e79
-					position absolute
-					right -34px
-			
-			.see-more
-				display block
-				background-color verde_limon
-				text-decoration none
-				color white
-				position absolute
-				right 0
-				bottom 0
-				padding 0 100px 0 20px
-				
-				&:before
-					content ""
-					display block
-					border-top 17px solid transparent
-					border-right 17px solid verde_limon
-					border-bottom 17px solid transparent
-					border-left 17px solid transparent
-					position absolute
-					left -34px
-		
-		.col-sm-5,
-		.col-sm-7
-			padding 0
-		
-		.col-sm-7
-			&.last
-				padding 0 10px 40px 10px
-
-.products-section
-	background url("../img/bg-6.png") 50% 0 fixed
-	padding 30px
-	
-	.summary
-		text-align center
-		
-		h2
-			color verde_palta
-			font-size 50px
-		
-		p
-			line-height normal
-			margin-bottom 30px
-	
-	.col-sm-8
-		.col-sm-4
-			text-align center
-			margin-bottom 40px
-			
-			span
-				color #009245
-				font-weight bold
-				display block
-			
-			p
-				text-align center
-				line-height normal
-			
-			.img-responsive
-				display inline-block
-
-.recipes-section
-	padding 30px 0
-	background url("../img/bg-4.jpg") repeat repeat
-	
-	h2
-		background-color white
-		color #ed1e79
-		display inline-block
-		padding 5px 20px 5px 80px
-		margin 0 0 20px 0
-	
-	.caption
-		color white
-		background-color #ed1e79
-		display inline-block
-		text-align center
-		padding 10px
-		line-height normal
-		position absolute
-		bottom 0
-		left 15px
-	
-	.see-more
-		background-color #d9e021
-		display inline-block
-		color #333333
-		text-align center
-		padding 5px 15px
-		line-height normal
-		position absolute
-		bottom 0
-		right 15px
-	
-	.see-all
-		display inline-block
-		background-color #ed1e79
-		text-decoration none
-		color white
-		position relative
-		padding 0 100px 0 20px
-		margin-top 30px
-		margin-right 34px
-		
-		&:before
-			content ""
-			display block
-			border-top 17px solid transparent
-			border-right 17px solid transparent
-			border-bottom 17px solid transparent
-			border-left 17px solid #ed1e79
-			position absolute
-			right -34px
-
-.sports
-	padding 30px 0
-	background url("../img/bg-3.jpg") 50% 0 fixed
-	
-	h2
-		background-color #009245
-		color white
-		display inline-block
-		padding 5px 20px 5px 80px
-		margin 0
-	
-	h3
-		color #d9e021
-		font-size 30px
-	
-	p
-		line-height normal
-		position relative
-	
-	.col-sm-3
-		text-align center
-		
-		.img-responsive
-			display inline-block
-			margin-top 10px
-			margin-bottom 10px
-	
-	.col-sm-9
-		padding-bottom 50px
-
-	.row
-		&:first-child
-			border-bottom 1px solid verde_limon
-	
-	.see-all
-		display inline-block
-		background-color #ed1e79
-		text-decoration none
-		color #fff
-		position relative
-		padding 0 100px 0 20px
-		margin-top 30px
-		margin-right 34px
-		
-		&:before
-			content ""
-			display block
-			border-top 17px solid transparent
-			border-right 17px solid transparent
-			border-bottom 17px solid transparent
-			border-left 17px solid #ed1e79
-			position absolute
-			right -34px
-				
-	.see-more
-		display block
-		background-color verde_limon
-		text-decoration none
-		color white
-		position absolute
-		right 32px
-		bottom 17px
-		padding 0 100px 0 20px
-		
-		&:before
-			content ""
-			display block
-			border-top 17px solid transparent
-			border-right 17px solid transparent
-			border-bottom 17px solid transparent
-			border-left 17px solid verde_limon
-			position absolute
-			right -34px
-		
-	.container
-		color white
-		
-		.col-sm-10
-			background rgba(66,33,11,.5)
-			
 
 @import ("responsive.styl")
 	

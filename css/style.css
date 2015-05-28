@@ -38,7 +38,6 @@ body {
   font-family: "JasmineUPC";
   font-size: 24px;
   color: #4d4d4d;
-  background: url("../img/bg-1.jpg") repeat repeat;
 }
 .btn {
   font-size: 24px;
@@ -95,9 +94,6 @@ header .navbar .navbar-collapse .navbar-nav li {
   display: table;
   width: 100%;
 }
-header .navbar .navbar-collapse .navbar-nav li.active a {
-  background-color: #8dba1f !important;
-}
 header .navbar .navbar-collapse .navbar-nav li a {
   color: #fff;
   display: table-cell;
@@ -107,8 +103,14 @@ header .navbar .navbar-collapse .navbar-nav li a {
 header .navbar .navbar-collapse .navbar-nav li a:focus {
   background-color: transparent;
 }
-header .navbar .navbar-collapse .navbar-nav li a:hover {
+header .navbar .navbar-collapse .navbar-nav li a.apple-green {
+  background-color: #8dba1f;
+}
+header .navbar .navbar-collapse .navbar-nav li a.green {
   background-color: #0a6633;
+}
+header .navbar .navbar-collapse .navbar-nav li a.pink {
+  background-color: #ed1e79;
 }
 header .navbar .navbar-header .navbar-toggle {
   border: 1px solid #fff;
@@ -220,61 +222,6 @@ footer .rs-f {
 footer .rs-f:last-child {
   margin-bottom: 50px;
 }
-.about-section {
-  background: url("../img/bg-1.jpg") repeat repeat;
-  padding: 20px 0;
-}
-.about-section .container {
-  color: #fff;
-}
-.about-section .container .col-sm-10 {
-  padding: 0;
-}
-.about-section .container .col-sm-10 .col-sm-6 {
-  padding: 0;
-}
-.about-section .container .col-sm-10 .col-sm-6.pink {
-  background-color: #ed1e79;
-  padding: 5px 15px 25px 15px;
-}
-.about-section .container .col-sm-10 .col-sm-6:first-child {
-  text-align: center;
-}
-.about-section .container .col-sm-10 .col-sm-6 h2 {
-  font-size: 30px;
-  margin-top: 10px;
-}
-.about-section .container .col-sm-10 .col-sm-6 p {
-  line-height: normal;
-  font-size: 20px;
-}
-.about-section .container .col-sm-10 .col-sm-6 .about-content {
-  position: relative;
-  padding-bottom: 10px;
-}
-.about-section .container .col-sm-10 .col-sm-6 .img-responsive {
-  display: inline-block;
-}
-.about-section .container .col-sm-10 .see-more {
-  display: block;
-  background-color: #8dba1f;
-  text-decoration: none;
-  color: #fff;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  padding: 0 15px;
-}
-.about-section .container .col-sm-10 .see-more:before {
-  content: "";
-  display: block;
-  border-top: 17px solid transparent;
-  border-right: 17px solid #8dba1f;
-  border-bottom: 17px solid transparent;
-  border-left: 17px solid transparent;
-  position: absolute;
-  left: -34px;
-}
 .block-green {
   background-color: #01cc01;
 }
@@ -286,28 +233,8 @@ footer .rs-f:last-child {
   line-height: 26px;
   padding: 5px;
 }
-.find-us {
-  padding: 30px 0;
-  background-color: #fff;
-}
-.find-us h2 {
-  background-color: #009245;
-  color: #fff;
-  display: inline-block;
-  padding: 5px 20px 5px 80px;
-  margin: 0 0 20px 0;
-}
-.find-us .img-responsive {
-  text-align: center;
-  display: inline-block;
-}
-.google-maps {
-  width: 100%;
-  height: 155px;
-  float: left;
-}
 .line-darkGray {
-  background-color: #333;
+  background-color: #fff;
   padding: 58px 0 38px 0;
 }
 .line-darkGray .col-xs-4 {
@@ -315,20 +242,19 @@ footer .rs-f:last-child {
 }
 .line-darkGray .col-xs-4 .percent {
   font-size: 60px;
-  font-weight: bold;
   line-height: 40px;
 }
-.line-darkGray .col-xs-4 .percent.apple-green {
+.line-darkGray .col-xs-4 .apple-green {
   color: #8dba1f;
+  font-weight: bold;
 }
-.line-darkGray .col-xs-4 .percent.green {
+.line-darkGray .col-xs-4 .green {
   color: #0a6633;
+  font-weight: bold;
 }
-.line-darkGray .col-xs-4 .percent.pink {
+.line-darkGray .col-xs-4 .pink {
   color: #ed1e79;
-}
-.line-darkGray .col-xs-4 span {
-  color: #fff;
+  font-weight: bold;
 }
 .main-slider .carousel .carousel-control {
   color: #009344;
@@ -347,251 +273,7 @@ footer .rs-f:last-child {
 .main-slider .carousel .carousel-indicators li.active {
   background-color: #ed1e79;
 }
-.nutrition-section {
-  background: url("../img/bg-2.jpg") repeat repeat;
-  padding: 15px 0;
-}
-.nutrition-section h2 {
-  background-color: #ed1e79;
-  color: #fff;
-  display: inline-block;
-  padding: 5px 20px 5px 80px;
-  margin: 0 0 15px 0;
-}
-.nutrition-section .col-sm-4 .block-pink {
-  background-color: #ed1e79;
-  position: relative;
-  min-height: 1px;
-  float: left;
-  color: #fff;
-  margin-bottom: 20px;
-}
-.nutrition-section .col-sm-4 .block-pink h3 {
-  color: #8dba1f;
-  line-height: 18px;
-}
-.nutrition-section .col-sm-4 .block-pink p {
-  font-size: 20px;
-  line-height: 18px;
-}
-.nutrition-section .col-sm-4 .block-pink .date {
-  font-size: 20px;
-  line-height: 18px;
-}
-.nutrition-section .col-sm-4 .block-pink .see-all {
-  display: inline-block;
-  background-color: #ed1e79;
-  text-decoration: none;
-  color: #fff;
-  position: relative;
-  padding: 0 100px 0 20px;
-  margin-top: 30px;
-  margin-right: 34px;
-}
-.nutrition-section .col-sm-4 .block-pink .see-all:before {
-  content: "";
-  display: block;
-  border-top: 17px solid transparent;
-  border-right: 17px solid transparent;
-  border-bottom: 17px solid transparent;
-  border-left: 17px solid #ed1e79;
-  position: absolute;
-  right: -34px;
-}
-.nutrition-section .col-sm-4 .block-pink .see-more {
-  display: block;
-  background-color: #8dba1f;
-  text-decoration: none;
-  color: #fff;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  padding: 0 100px 0 20px;
-}
-.nutrition-section .col-sm-4 .block-pink .see-more:before {
-  content: "";
-  display: block;
-  border-top: 17px solid transparent;
-  border-right: 17px solid #8dba1f;
-  border-bottom: 17px solid transparent;
-  border-left: 17px solid transparent;
-  position: absolute;
-  left: -34px;
-}
-.nutrition-section .col-sm-4 .col-sm-5,
-.nutrition-section .col-sm-4 .col-sm-7 {
-  padding: 0;
-}
-.nutrition-section .col-sm-4 .col-sm-7.last {
-  padding: 0 10px 40px 10px;
-}
-.products-section {
-  background: url("../img/bg-6.png") 50% 0 fixed;
-  padding: 30px;
-}
-.products-section .summary {
-  text-align: center;
-}
-.products-section .summary h2 {
-  color: #0a6633;
-  font-size: 50px;
-}
-.products-section .summary p {
-  line-height: normal;
-  margin-bottom: 30px;
-}
-.products-section .col-sm-8 .col-sm-4 {
-  text-align: center;
-  margin-bottom: 40px;
-}
-.products-section .col-sm-8 .col-sm-4 span {
-  color: #009245;
-  font-weight: bold;
-  display: block;
-}
-.products-section .col-sm-8 .col-sm-4 p {
-  text-align: center;
-  line-height: normal;
-}
-.products-section .col-sm-8 .col-sm-4 .img-responsive {
-  display: inline-block;
-}
-.recipes-section {
-  padding: 30px 0;
-  background: url("../img/bg-4.jpg") repeat repeat;
-}
-.recipes-section h2 {
-  background-color: #fff;
-  color: #ed1e79;
-  display: inline-block;
-  padding: 5px 20px 5px 80px;
-  margin: 0 0 20px 0;
-}
-.recipes-section .caption {
-  color: #fff;
-  background-color: #ed1e79;
-  display: inline-block;
-  text-align: center;
-  padding: 10px;
-  line-height: normal;
-  position: absolute;
-  bottom: 0;
-  left: 15px;
-}
-.recipes-section .see-more {
-  background-color: #d9e021;
-  display: inline-block;
-  color: #333;
-  text-align: center;
-  padding: 5px 15px;
-  line-height: normal;
-  position: absolute;
-  bottom: 0;
-  right: 15px;
-}
-.recipes-section .see-all {
-  display: inline-block;
-  background-color: #ed1e79;
-  text-decoration: none;
-  color: #fff;
-  position: relative;
-  padding: 0 100px 0 20px;
-  margin-top: 30px;
-  margin-right: 34px;
-}
-.recipes-section .see-all:before {
-  content: "";
-  display: block;
-  border-top: 17px solid transparent;
-  border-right: 17px solid transparent;
-  border-bottom: 17px solid transparent;
-  border-left: 17px solid #ed1e79;
-  position: absolute;
-  right: -34px;
-}
-.sports {
-  padding: 30px 0;
-  background: url("../img/bg-3.jpg") 50% 0 fixed;
-}
-.sports h2 {
-  background-color: #009245;
-  color: #fff;
-  display: inline-block;
-  padding: 5px 20px 5px 80px;
-  margin: 0;
-}
-.sports h3 {
-  color: #d9e021;
-  font-size: 30px;
-}
-.sports p {
-  line-height: normal;
-  position: relative;
-}
-.sports .col-sm-3 {
-  text-align: center;
-}
-.sports .col-sm-3 .img-responsive {
-  display: inline-block;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-.sports .col-sm-9 {
-  padding-bottom: 50px;
-}
-.sports .row:first-child {
-  border-bottom: 1px solid #8dba1f;
-}
-.sports .see-all {
-  display: inline-block;
-  background-color: #ed1e79;
-  text-decoration: none;
-  color: #fff;
-  position: relative;
-  padding: 0 100px 0 20px;
-  margin-top: 30px;
-  margin-right: 34px;
-}
-.sports .see-all:before {
-  content: "";
-  display: block;
-  border-top: 17px solid transparent;
-  border-right: 17px solid transparent;
-  border-bottom: 17px solid transparent;
-  border-left: 17px solid #ed1e79;
-  position: absolute;
-  right: -34px;
-}
-.sports .see-more {
-  display: block;
-  background-color: #8dba1f;
-  text-decoration: none;
-  color: #fff;
-  position: absolute;
-  right: 32px;
-  bottom: 17px;
-  padding: 0 100px 0 20px;
-}
-.sports .see-more:before {
-  content: "";
-  display: block;
-  border-top: 17px solid transparent;
-  border-right: 17px solid transparent;
-  border-bottom: 17px solid transparent;
-  border-left: 17px solid #8dba1f;
-  position: absolute;
-  right: -34px;
-}
-.sports .container {
-  color: #fff;
-}
-.sports .container .col-sm-10 {
-  background: rgba(66,33,11,0.5);
-}
 @media (min-width: 480px) {
-  .google-maps {
-    height: 220px;
-  }
   .block-green #message {
     color: #fff;
     font-size: 28px;
@@ -609,8 +291,8 @@ footer .rs-f:last-child {
   header .navbar .navbar-collapse .navbar-nav li a {
     text-align: center;
     padding: 5px;
-    width: 102px;
-    height: 40px;
+    width: 89px;
+    height: 49px;
     vertical-align: middle;
     line-height: 13px;
   }
@@ -621,12 +303,6 @@ footer .rs-f:last-child {
     padding: 16px 0 15px 0;
     margin-top: 0;
     float: left;
-  }
-  .about-section .container .col-sm-10 {
-    background-color: #ed1e79;
-  }
-  .google-maps {
-    height: 330px;
   }
   .line-darkGray .col-xs-4 .percent {
     font-size: 120px;
@@ -640,10 +316,7 @@ footer .rs-f:last-child {
 }
 @media (min-width: 992px) {
   header .navbar .navbar-collapse .navbar-nav li a {
-    width: 134px;
-  }
-  .google-maps {
-    height: 440px;
+    width: 117px;
   }
   .block-green #message {
     color: #fff;
@@ -654,7 +327,8 @@ footer .rs-f:last-child {
 }
 @media (min-width: 1200px) {
   header .navbar .navbar-collapse .navbar-nav li a {
-    width: 162px;
+    width: 142px;
+    height: 40px;
   }
   .block-green #message {
     color: #fff;
