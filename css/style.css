@@ -76,7 +76,7 @@ header .logo img {
   width: 200px;
 }
 header .navbar {
-  background-color: #ea0080;
+  background-color: #ed1e79;
   min-height: 0;
   margin-bottom: 0;
   -moz-box-shadow: 0 10px 25px -6px #000;
@@ -96,7 +96,7 @@ header .navbar .navbar-collapse .navbar-nav li {
   width: 100%;
 }
 header .navbar .navbar-collapse .navbar-nav li.active a {
-  background-color: #8cc63f !important;
+  background-color: #8dba1f !important;
 }
 header .navbar .navbar-collapse .navbar-nav li a {
   color: #fff;
@@ -108,7 +108,7 @@ header .navbar .navbar-collapse .navbar-nav li a:focus {
   background-color: transparent;
 }
 header .navbar .navbar-collapse .navbar-nav li a:hover {
-  background-color: #006837;
+  background-color: #0a6633;
 }
 header .navbar .navbar-header .navbar-toggle {
   border: 1px solid #fff;
@@ -117,7 +117,7 @@ header .navbar .navbar-header .navbar-toggle .icon-bar {
   background-color: #fff;
 }
 header .pink-line {
-  background-color: #ea0080;
+  background-color: #ed1e79;
   color: #fff;
 }
 header .pink-line .container {
@@ -154,6 +154,7 @@ header .pink-line .input-group .input-group-btn .btn-success:hover {
 header .pink-line .nav-pills {
   font-size: 20px;
   line-height: 53px;
+  margin-left: 162px;
 }
 header .pink-line .nav-pills li {
   border-left: 1px solid #680141;
@@ -190,17 +191,17 @@ footer {
   padding: 30px 0;
 }
 footer h2 {
-  color: #8cc63f;
+  color: #8dba1f;
   margin-top: 0;
 }
 footer p {
   line-height: normal;
 }
 footer p .green {
-  color: #8cc63f;
+  color: #8dba1f;
 }
 footer .form-horizontal .control-label {
-  color: #8cc63f;
+  color: #8dba1f;
   font-weight: normal;
 }
 footer .form-horizontal .form-group {
@@ -212,6 +213,12 @@ footer .form-horizontal .form-group textarea {
 }
 footer .form-horizontal .form-group .btn-success {
   margin-top: 20px;
+}
+footer .rs-f {
+  margin-top: 50px;
+}
+footer .rs-f:last-child {
+  margin-bottom: 50px;
 }
 .about-section {
   background: url("../img/bg-1.jpg") repeat repeat;
@@ -227,7 +234,7 @@ footer .form-horizontal .form-group .btn-success {
   padding: 0;
 }
 .about-section .container .col-sm-10 .col-sm-6.pink {
-  background-color: #ea0080;
+  background-color: #ed1e79;
   padding: 5px 15px 25px 15px;
 }
 .about-section .container .col-sm-10 .col-sm-6:first-child {
@@ -250,7 +257,7 @@ footer .form-horizontal .form-group .btn-success {
 }
 .about-section .container .col-sm-10 .see-more {
   display: block;
-  background-color: #8cc63f;
+  background-color: #8dba1f;
   text-decoration: none;
   color: #fff;
   position: absolute;
@@ -262,11 +269,22 @@ footer .form-horizontal .form-group .btn-success {
   content: "";
   display: block;
   border-top: 17px solid transparent;
-  border-right: 17px solid #8cc63f;
+  border-right: 17px solid #8dba1f;
   border-bottom: 17px solid transparent;
   border-left: 17px solid transparent;
   position: absolute;
   left: -34px;
+}
+.block-green {
+  background-color: #01cc01;
+}
+.block-green #message {
+  color: #fff;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+  padding: 5px;
 }
 .find-us {
   padding: 30px 0;
@@ -301,29 +319,33 @@ footer .form-horizontal .form-group .btn-success {
   line-height: 40px;
 }
 .line-darkGray .col-xs-4 .percent.apple-green {
-  color: #8cc63f;
+  color: #8dba1f;
 }
 .line-darkGray .col-xs-4 .percent.green {
-  color: #006837;
+  color: #0a6633;
 }
 .line-darkGray .col-xs-4 .percent.pink {
-  color: #ea0080;
+  color: #ed1e79;
 }
 .line-darkGray .col-xs-4 span {
   color: #fff;
 }
-.main-slider {
-  padding-top: 179px;
-}
 .main-slider .carousel .carousel-control {
   color: #009344;
+  background-image: none !important;
+}
+.main-slider .carousel .carousel-control .glyphicon-chevron-right {
+  margin-right: 0px;
+}
+.main-slider .carousel .carousel-control .glyphicon-chevron-left {
+  margin-left: 0px;
 }
 .main-slider .carousel .carousel-indicators li {
   background-color: #fff;
-  border-color: #ea0080;
+  border-color: #ed1e79;
 }
 .main-slider .carousel .carousel-indicators li.active {
-  background-color: #ea0080;
+  background-color: #ed1e79;
 }
 .nutrition-section {
   background: url("../img/bg-2.jpg") repeat repeat;
@@ -345,7 +367,7 @@ footer .form-horizontal .form-group .btn-success {
   margin-bottom: 20px;
 }
 .nutrition-section .col-sm-4 .block-pink h3 {
-  color: #8cc63f;
+  color: #8dba1f;
   line-height: 18px;
 }
 .nutrition-section .col-sm-4 .block-pink p {
@@ -356,9 +378,29 @@ footer .form-horizontal .form-group .btn-success {
   font-size: 20px;
   line-height: 18px;
 }
+.nutrition-section .col-sm-4 .block-pink .see-all {
+  display: inline-block;
+  background-color: #ed1e79;
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  padding: 0 100px 0 20px;
+  margin-top: 30px;
+  margin-right: 34px;
+}
+.nutrition-section .col-sm-4 .block-pink .see-all:before {
+  content: "";
+  display: block;
+  border-top: 17px solid transparent;
+  border-right: 17px solid transparent;
+  border-bottom: 17px solid transparent;
+  border-left: 17px solid #ed1e79;
+  position: absolute;
+  right: -34px;
+}
 .nutrition-section .col-sm-4 .block-pink .see-more {
   display: block;
-  background-color: #8cc63f;
+  background-color: #8dba1f;
   text-decoration: none;
   color: #fff;
   position: absolute;
@@ -370,7 +412,7 @@ footer .form-horizontal .form-group .btn-success {
   content: "";
   display: block;
   border-top: 17px solid transparent;
-  border-right: 17px solid #8cc63f;
+  border-right: 17px solid #8dba1f;
   border-bottom: 17px solid transparent;
   border-left: 17px solid transparent;
   position: absolute;
@@ -384,16 +426,14 @@ footer .form-horizontal .form-group .btn-success {
   padding: 0 10px 40px 10px;
 }
 .products-section {
-  background: url("../img/bg-1.jpg") repeat repeat;
-}
-.products-section .container {
-  background: url("../img/bg-6.png") center center no-repeat;
+  background: url("../img/bg-6.png") 50% 0 fixed;
+  padding: 30px;
 }
 .products-section .summary {
   text-align: center;
 }
 .products-section .summary h2 {
-  color: #006837;
+  color: #0a6633;
   font-size: 50px;
 }
 .products-section .summary p {
@@ -500,11 +540,31 @@ footer .form-horizontal .form-group .btn-success {
   padding-bottom: 50px;
 }
 .sports .row:first-child {
-  border-bottom: 1px solid #8cc63f;
+  border-bottom: 1px solid #8dba1f;
+}
+.sports .see-all {
+  display: inline-block;
+  background-color: #ed1e79;
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  padding: 0 100px 0 20px;
+  margin-top: 30px;
+  margin-right: 34px;
+}
+.sports .see-all:before {
+  content: "";
+  display: block;
+  border-top: 17px solid transparent;
+  border-right: 17px solid transparent;
+  border-bottom: 17px solid transparent;
+  border-left: 17px solid #ed1e79;
+  position: absolute;
+  right: -34px;
 }
 .sports .see-more {
   display: block;
-  background-color: #8cc63f;
+  background-color: #8dba1f;
   text-decoration: none;
   color: #fff;
   position: absolute;
@@ -518,7 +578,7 @@ footer .form-horizontal .form-group .btn-success {
   border-top: 17px solid transparent;
   border-right: 17px solid transparent;
   border-bottom: 17px solid transparent;
-  border-left: 17px solid #8cc63f;
+  border-left: 17px solid #8dba1f;
   position: absolute;
   right: -34px;
 }
@@ -531,6 +591,12 @@ footer .form-horizontal .form-group .btn-success {
 @media (min-width: 480px) {
   .google-maps {
     height: 220px;
+  }
+  .block-green #message {
+    color: #fff;
+    font-size: 28px;
+    line-height: 30px;
+    padding: 15px;
   }
 }
 @media (min-width: 768px) {
@@ -557,7 +623,7 @@ footer .form-horizontal .form-group .btn-success {
     float: left;
   }
   .about-section .container .col-sm-10 {
-    background-color: #ea0080;
+    background-color: #ed1e79;
   }
   .google-maps {
     height: 330px;
@@ -571,9 +637,6 @@ footer .form-horizontal .form-group .btn-success {
   .main-slider {
     padding-top: 159px;
   }
-  .main-slider .carousel .carousel-indicators {
-    bottom: 120px;
-  }
 }
 @media (min-width: 992px) {
   header .navbar .navbar-collapse .navbar-nav li a {
@@ -582,9 +645,21 @@ footer .form-horizontal .form-group .btn-success {
   .google-maps {
     height: 440px;
   }
+  .block-green #message {
+    color: #fff;
+    font-size: 48px;
+    line-height: 40px;
+    padding: 20px;
+  }
 }
 @media (min-width: 1200px) {
   header .navbar .navbar-collapse .navbar-nav li a {
     width: 162px;
+  }
+  .block-green #message {
+    color: #fff;
+    font-size: 58px;
+    line-height: 48px;
+    padding: 30px;
   }
 }

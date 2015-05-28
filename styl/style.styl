@@ -1,4 +1,6 @@
-rosado = #ea0080
+rosado = #ED1E79
+verde_limon = #8DBA1F
+verde_palta = #0A6633
 
 box-shadow()
 	-moz-box-shadow arguments
@@ -85,7 +87,7 @@ header
 					
 					&.active
 						a
-							background-color #8cc63f !important
+							background-color verde_limon !important
 						
 					a
 						color white
@@ -97,7 +99,7 @@ header
 							background-color transparent
 						
 						&:hover
-							background-color #006837
+							background-color verde_palta
 							
 						
 		
@@ -145,6 +147,7 @@ header
 		.nav-pills
 			font-size 20px
 			line-height 53px
+			margin-left 162px
 			
 			li
 				border-left 1px solid #680141
@@ -181,18 +184,18 @@ footer
 	padding 30px 0
 	
 	h2
-		color #8cc63f
+		color verde_limon
 		margin-top 0
 	
 	p
 		line-height normal
 		
 		.green
-			color #8cc63f
+			color verde_limon
 	
 	.form-horizontal
 		.control-label
-			color #8cc63f
+			color verde_limon
 			font-weight normal
 		
 		.form-group
@@ -204,7 +207,12 @@ footer
 			
 			.btn-success
 				margin-top 20px
+	
+	.rs-f
+		margin-top 50px
 		
+		&:last-child
+			margin-bottom 50px
 
 .about-section
 	background url("../img/bg-1.jpg") repeat repeat
@@ -243,7 +251,7 @@ footer
 			
 			.see-more
 				display block
-				background-color #8cc63f
+				background-color verde_limon
 				text-decoration none
 				color white
 				position absolute
@@ -255,11 +263,22 @@ footer
 					content ""
 					display block
 					border-top 17px solid transparent
-					border-right 17px solid #8cc63f
+					border-right 17px solid verde_limon
 					border-bottom 17px solid transparent
 					border-left 17px solid transparent
 					position absolute
 					left -34px
+
+.block-green
+	background-color #01cc01
+	
+	#message
+		color #fff
+		font-style italic
+		font-weight bold
+		font-size 22px
+		line-height 26px
+		padding 5px
 
 .find-us
 	padding 30px 0
@@ -294,10 +313,10 @@ footer
 			line-height 40px
 			
 			&.apple-green
-				color #8cc63f
+				color verde_limon
 			
 			&.green
-				color #006837
+				color verde_palta
 			
 			&.pink
 				color rosado	
@@ -306,11 +325,16 @@ footer
 			color white
 
 .main-slider
-	padding-top 179px
-	
 	.carousel
 		.carousel-control
 			color #009344
+			background-image none !important
+			
+			.glyphicon-chevron-right
+				margin-right 0px
+			
+			.glyphicon-chevron-left
+				margin-left 0px
 
 		.carousel-indicators
 			li
@@ -341,7 +365,7 @@ footer
 			margin-bottom 20px
 			
 			h3
-				color #8cc63f
+				color verde_limon
 				line-height 18px
 			
 			p
@@ -352,9 +376,29 @@ footer
 				font-size 20px
 				line-height 18px
 			
+			.see-all
+				display inline-block
+				background-color #ed1e79
+				text-decoration none
+				color #fff
+				position relative
+				padding 0 100px 0 20px
+				margin-top 30px
+				margin-right 34px
+				
+				&:before
+					content ""
+					display block
+					border-top 17px solid transparent
+					border-right 17px solid transparent
+					border-bottom 17px solid transparent
+					border-left 17px solid #ed1e79
+					position absolute
+					right -34px
+			
 			.see-more
 				display block
-				background-color #8cc63f
+				background-color verde_limon
 				text-decoration none
 				color white
 				position absolute
@@ -366,7 +410,7 @@ footer
 					content ""
 					display block
 					border-top 17px solid transparent
-					border-right 17px solid #8cc63f
+					border-right 17px solid verde_limon
 					border-bottom 17px solid transparent
 					border-left 17px solid transparent
 					position absolute
@@ -381,16 +425,14 @@ footer
 				padding 0 10px 40px 10px
 
 .products-section
-	background url("../img/bg-1.jpg") repeat repeat
-	
-	.container
-		background url("../img/bg-6.png") center center no-repeat
+	background url("../img/bg-6.png") 50% 0 fixed
+	padding 30px
 	
 	.summary
 		text-align center
 		
 		h2
-			color #006837
+			color verde_palta
 			font-size 50px
 		
 		p
@@ -499,11 +541,31 @@ footer
 
 	.row
 		&:first-child
-			border-bottom 1px solid #8cc63f
+			border-bottom 1px solid verde_limon
+	
+	.see-all
+		display inline-block
+		background-color #ed1e79
+		text-decoration none
+		color #fff
+		position relative
+		padding 0 100px 0 20px
+		margin-top 30px
+		margin-right 34px
+		
+		&:before
+			content ""
+			display block
+			border-top 17px solid transparent
+			border-right 17px solid transparent
+			border-bottom 17px solid transparent
+			border-left 17px solid #ed1e79
+			position absolute
+			right -34px
 				
 	.see-more
 		display block
-		background-color #8cc63f
+		background-color verde_limon
 		text-decoration none
 		color white
 		position absolute
@@ -517,7 +579,7 @@ footer
 			border-top 17px solid transparent
 			border-right 17px solid transparent
 			border-bottom 17px solid transparent
-			border-left 17px solid #8cc63f
+			border-left 17px solid verde_limon
 			position absolute
 			right -34px
 		
@@ -526,7 +588,7 @@ footer
 		
 		.col-sm-10
 			background rgba(66,33,11,.5)
-
+			
 
 @import ("responsive.styl")
 	
