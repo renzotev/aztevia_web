@@ -131,7 +131,7 @@ header .pink-line .container {
 }
 header .pink-line .input-group {
   background-color: #680141;
-  padding: 10px;
+  padding: 7px 14px;
 }
 header .pink-line .input-group .form-control {
   font-size: 24px;
@@ -140,17 +140,19 @@ header .pink-line .input-group .form-control {
   -webkit-border-radius: 5px 0 0 5px !important;
   -moz-border-radius: 5px 0 0 5px !important;
   border-radius: 5px 0 0 5px !important;
+  height: 31px;
+  line-height: 31px;
 }
 header .pink-line .input-group .glyphicon-search {
   position: absolute;
-  left: 20px;
-  top: 20px;
+  left: 24px;
+  top: 16px;
   z-index: 4;
   font-size: 14px;
   color: #666;
 }
 header .pink-line .input-group .input-group-btn .btn-success {
-  line-height: 20px;
+  line-height: 17px;
   border: 1px solid #ccc;
   background-color: #a8ba4a;
 }
@@ -159,7 +161,7 @@ header .pink-line .input-group .input-group-btn .btn-success:hover {
 }
 header .pink-line .nav-pills {
   font-size: 20px;
-  line-height: 53px;
+  line-height: 45px;
   margin-left: 162px;
 }
 header .pink-line .nav-pills li {
