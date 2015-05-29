@@ -126,12 +126,15 @@ header .pink-line {
   background-color: #ed1e79;
   color: #fff;
 }
-header .pink-line .container {
+header .pink-line .container-fluid {
   padding: 0;
 }
 header .pink-line .input-group {
   background-color: #680141;
   padding: 7px 14px;
+  margin-left: 120px;
+  max-width: 325px;
+  position: relative;
 }
 header .pink-line .input-group .form-control {
   font-size: 24px;
@@ -159,10 +162,41 @@ header .pink-line .input-group .input-group-btn .btn-success {
 header .pink-line .input-group .input-group-btn .btn-success:hover {
   background-color: #84913a;
 }
+header .pink-line .lang-flags {
+  display: table;
+  height: 45px;
+  position: absolute;
+  top: 0;
+  left: -135px;
+}
+header .pink-line .lang-flags ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: table-cell;
+  vertical-align: middle;
+}
+header .pink-line .lang-flags ul:after {
+  content: "";
+  clear: both;
+  display: block;
+  height: 0;
+}
+header .pink-line .lang-flags ul li {
+  float: left;
+  padding: 0 9px;
+  background-color: #fff;
+}
+header .pink-line .lang-flags ul li:first-child {
+  padding-right: 0;
+}
+header .pink-line .lang-flags ul li a {
+  display: block;
+}
 header .pink-line .nav-pills {
   font-size: 20px;
   line-height: 45px;
-  margin-left: 162px;
+/*margin-left 162px*/
 }
 header .pink-line .nav-pills li {
   border-left: 1px solid #680141;

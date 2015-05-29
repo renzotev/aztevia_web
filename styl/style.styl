@@ -122,12 +122,15 @@ header
 		background-color rosado
 		color white
 		
-		.container
+		.container-fluid
 			padding 0
 		
 		.input-group
 			background-color #680141
 			padding 7px 14px
+			margin-left 120px
+			max-width 325px
+			position relative
 			
 			.form-control
 				font-size 24px
@@ -155,10 +158,41 @@ header
 						background-color #84913a
 				
 		
+		.lang-flags
+			display table
+			height 45px
+			position absolute
+			top 0
+			left -135px
+			
+			ul
+				list-style none
+				margin 0
+				padding 0
+				display table-cell
+				vertical-align middle
+				
+				&:after
+					content ""
+					clear both
+					display block
+					height 0
+				
+				li
+					float left
+					padding 0 9px
+					background-color white
+					
+					&:first-child
+						padding-right 0
+
+					a
+						display block
+
 		.nav-pills
 			font-size 20px
 			line-height 45px
-			margin-left 162px
+			/*margin-left 162px*/
 			
 			li
 				border-left 1px solid #680141
