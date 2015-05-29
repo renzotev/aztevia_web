@@ -94,6 +94,9 @@ header .navbar {
 header .navbar .navbar-collapse {
   padding: 0;
 }
+header .navbar .navbar-collapse .navbar-nav {
+  margin: 0;
+}
 header .navbar .navbar-collapse .navbar-nav li {
   display: table;
   width: 100%;
@@ -196,7 +199,7 @@ header .pink-line .lang-flags ul li a {
 header .pink-line .nav-pills {
   font-size: 20px;
   line-height: 45px;
-/*margin-left 162px*/
+  margin-left: 162px;
 }
 header .pink-line .nav-pills li {
   border-left: 1px solid #680141;
