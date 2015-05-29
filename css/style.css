@@ -435,7 +435,7 @@ footer .rs-f:last-child {
     text-align: center;
     padding: 5px;
     width: 89px;
-    height: 49px;
+    height: 57px;
     vertical-align: middle;
     line-height: 13px;
   }
@@ -495,7 +495,6 @@ footer .rs-f:last-child {
 @media (min-width: 1200px) {
   header .navbar .navbar-collapse .navbar-nav li a {
     width: 142px;
-    height: 40px;
   }
   .block-wood .message {
     padding: 30px 195px 30px 30px;
